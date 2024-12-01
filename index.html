@@ -1,107 +1,143 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <!-- Déclaration du type de document et définition de la langue principale du document -->
 
 <style>
+  /* Définition des styles CSS intégrés */
   .table-container {
     width: 90%;
-    /* Matches the table's width */
+    /* Ajuste la largeur du conteneur de la table */
   }
 
   table {
     width: 100%;
-    /* Ensures the table fills the container's width */
+    /* Assure que la table occupe toute la largeur de son conteneur */
   }
 
   .text-with-image {
     font-size: 16px;
-    /* Sets the base text size */
+    /* Définit la taille de base du texte */
   }
 
   .text-with-image img {
     height: 1em;
-    /* Matches the height of the text */
+    /* Assure que la hauteur de l'image correspond à celle du texte */
     vertical-align: middle;
-    /* Aligns image with text */
+    /* Aligne verticalement l'image avec le texte */
   }
 
   .table-title {
-      margin-bottom: 0px; /* Apply margin-bottom only to elements with this class */
-      text-align: center;
+      margin-bottom: 0px; /* Supprime la marge inférieure pour les titres de table */
+      text-align: center; /* Centre le texte horizontalement */
     }
 </style>
 
 <head>
+  <!-- Début de la section d'en-tête du document -->
   <meta charset="UTF-8">
+  <!-- Déclare l'encodage des caractères pour garantir la prise en charge des caractères spéciaux -->
   <title>Curriculum Vitae</title>
+  <!-- Définit le titre du document affiché dans l'onglet du navigateur -->
 </head>
 
 <body>
+  <!-- Début du contenu principal du document -->
   <header>
     <h1>Curriculum Vitae</h1>
+    <!-- Titre principal du document -->
   </header>
   <section>
     <h2>Détails personnels</h2>
+    <!-- Sous-section pour les informations personnelles -->
     <p>Nom : Manon De Taevernier </p>
     <p>email : manon.de-taevernier.etu@univ-lille.fr</p>
   </section>
   <section>
     <h2>Education</h2>
+    <!-- Sous-section pour l'éducation -->
     <img src="./images/school.JPG">
+    <!-- Image associée à la section Éducation -->
   </section>
   <div>
     <ul>
+      <!-- Liste non ordonnée des établissements fréquentés -->
       <li><a href="https://www.univ-lille.fr/">Université de Lille</a></li>
-      <li> Université d'Ottawa</li>
-      <li> Université de l'Ouest</li>
+      <li><a href="http://www.uottawa.ca/en">Université d'Ottawa</a></li>
+      <li><a href="https://www.uco.fr/fr">Université de l'Ouest</a></li>
     </ul>
   </div>
   <section>
     <h2>Expérience professionnelle</h2>
+    <!-- Sous-section pour l'expérience professionnelle -->
     <div>
       <ol>
+        <!-- Liste ordonnée des expériences professionnelles -->
         <li>Conseils des Ecoles publiques de l'Ontario</li>
         <li>Parents partenaires en Education</li>
         <li>Université d'Ottawa</li>
       </ol>
     </div>
   </section>
-  </head>
 
   <body>
     <div class="table-container">
+      <!-- Conteneur avec la classe CSS 'table-container', utilisé pour centrer et ajuster la largeur de la table -->
       <table border=1>
+        <!-- Déclaration d'une table HTML avec une bordure simple -->
         <p class="table-title">Notes</p>
+        <!-- Titre de la table affiché au-dessus de la table. La classe CSS 'table-title' est utilisée pour centrer le texte et ajuster la marge -->
         <thead>
+          <!-- En-tête de la table -->
           <tr>
             <th colspan="2"><i>Programming Module</i></th>
+            <!-- Cellule d'en-tête fusionnée sur deux colonnes (colspan="2") pour afficher le titre général de la table -->
+          <!-- Le contenu est en italique grâce à la balise <i>. -->
           </tr>
         </thead>
-        <tbody>
+        
+        <body>
+          <!-- Corps de la table -->
           <tr>
             <th>Cours</th>
+            <!-- Cellule d'en-tête pour la colonne des cours -->
             <th>Notes</th>
+            <!-- Cellule d'en-tête pour la colonne des notes -->
           </tr>
           <tr>
+            <!-- Première ligne de données -->
             <td>
               <div class="text-with-image">
+                <!-- Conteneur avec la classe CSS 'text-with-image' pour aligner l'image et le texte -->
                 Développement Web
-                <a href="https://www.w3schools.com/html/html_css.asp ">
-                  <img src="./images/logoHTMLCSS.JPG"></a>
+                <a href="https://www.w3schools.com/html/html_css.asp "> 
+                  <!-- Lien vers une ressource pédagogique sur HTML et CSS -->
+                  <img src="./images/logoHTMLCSS.JPG"></a> 
+                  <!-- Image associée au cours, avec une description alternative pour l'accessibilité -->
+                </a>
               </div>
             </td>
             <td>16</td>
+            <!-- Cellule contenant la note obtenue pour ce cours -->
           </tr>
           <tr>
+            <!-- Deuxième ligne de données -->
             <td>Programmation JAVA</td>
+            <!-- Cellule contenant le nom du cours -->
             <td>17</td>
+            <!-- Cellule contenant la note obtenue -->
           </tr>
           <tr>
+            <!-- Troisième ligne de données -->
             <td>Développement des applications mobiles</td>
+            <!-- Cellule contenant le nom du cours -->
             <td>18</td>
+            <!-- Cellule contenant la note obtenue -->
           </tr>
           <tr>
+            <!-- Dernière ligne : récapitulative -->
             <th colspan="2">Moyenne : 17</th>
-          </tr>
+            <!-- Cellule d'en-tête fusionnée sur deux colonnes affichant la moyenne des notes -->
+        </tr>
         </tbody>
       </table>
     </div>
@@ -109,11 +145,18 @@
 
 
     <section>
+      <!-- Section contenant les informations sur les langues et les loisirs -->
       <h2>Langues</h2>
+      <!-- Titre pour la liste des langues -->
       <p>Francais, Anglais intermédiaire</p>
+      <!-- Paragraphe listant les langues maîtrisées -->
       <h2>Loisirs</h2>
+       <!-- Titre pour la liste des loisirs-->
       <p>Randonnée, Canoé camping, Activités DIY</p>
+      <!-- Paragraphe listant les loisirs-->
     </section>
   </body>
+  <!-- Fin du corps principal de la page -->
 
 </html>
+<!-- Fin du document HTML -->
